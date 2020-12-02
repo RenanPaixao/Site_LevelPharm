@@ -1,0 +1,21 @@
+body{
+	font-family: font-family: 'Goldman', cursive;
+	color: #333;
+}
+a:link, a:active, a:visited{
+	color: #315e8a;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+ul.inline li, ol.inline li{
+	display: inline;
+	margin-right: 15px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
