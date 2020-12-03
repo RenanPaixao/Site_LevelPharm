@@ -1,29 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
-	<title>Level Pharm</title>
+	<!-- CSS-->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Level Pharm</title>
+	<!-- Fonte-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
-
+	
 </head>
 <body>
-	<nav>
-		<img class="menu-logo" src="img/logo-level-pharm.jpeg" alt="logo LevelPharm">
-		<ul class="inline">
-			<li class="botao-nav"><a href="#banner">HOME</a></li>
-			<li class="botao-nav"><a href="#sobre">Quem somos</a></li>
-			<li class="botao-nav"><a href="#servicos">Serviços</a></li>
-			<li class="botao-nav"><a href="#contatos">Contatos</a></li>
-		</ul>
-	</nav>
 
-	<section>
-		<div></div>
+	<header class="menu" name="menu">
+		<div class="menu-container">
+			<a class="menu-logo" href="#banner"><img src="img/logo-level-pharm.jpeg" alt="brafe"></a>
+			<nav class="menu-nav">
+				<ul class="inline sem-marcador">
+					<li><a href="#banner">HOME</a></li>
+					<li><a href="#sobre">Quem somos</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#contatos">Contatos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="banner">
+		<h1>Level Pharm: <br> tudo que você precisa <br> para sua saúde melhor</h1>
+		<a href="#servicos"><button class="botao"><h5>Conheça nossos serviços</h5></button></a>
+	</div>
+
+	<section class="sobre" id="sobre">
+		<h2>Level Pharm</h2>
+		<div class="div-sobre">
+			<div class="item-sobre">
+				<img src="img/sobre1.jpg" alt="img-sobre">
+				<h3>Quem somos</h3>
+				<p>A Level Pharm foi fundada em 2020, por estudantes do curso de graduação em farmácia da Universidade Federal de Pernambuco. Sendo a primeira empresa júnior de farmácia dentro da FEJEPE - Federação de Empresa Juniores de Pernambuco.</p>
+				<p>Desde então a Level Pharm busca destacar-se na prestação de consultorias e serviços farmacêuticos. Buscando promover a saúde em toda a sua integridade e particularidade, pois entendemos que essa encontra-se na higiene pessoal, saneamento, alimentação, medicamentação e etc. Respeitando sempre o bem-estar físico, mental e social daqueles que dependem direta ou indiretamente de nós.</p>
+				<p>Com nossa marca "saúde para todos" vivemos constantemente procurando levar a importância da saúde acessível para todos.</p>
+				<h3>Missão</h3>
+				<p>Ser uma das primeiras empresas juniores a impactar diretamente mil pessoas com os nosso projetos, levando a saúde para todos.</p>
+				<h3>Visão</h3>
+				<p>Ser referência em Pernambuco na prestação de serviços de consultoria e projetos farmacêuticos, com foco no desenvolvimento dos membros e da empresa.</p>
+
+			</div>
+		</div>
 	</section>
+
+	<section class="servicos" id="servicos">
+		<div class="div-servicos">
+			<h2>Serviços:</h2>
+			<div class="servico s1">
+				<h3>Consultoria</h3>
+				<img src="img/farmacia1.jpg">
+				<p>Assessoramos diversos serviços ligados a prática farmacêutica como: abertura de estabelecimentos específicos, planejamentos de eventos de promoção à saúde e treinamentos para prática comercial no âmbito da farmácia.</p>
+			</div>
+			<div class="servico s2">
+				
+				<h3>Consultória farmaceutico</h3>
+				<img src="img/farmacia1.jpg">
+				<p>Auxiliamos na implantação de consultório farmacêutico personalizado, de acordo com as orientações e legislações vigentes.</p>
+			</div>
+			<div class="servico s3">
+				
+				<h3>Segurança alimentar</h3>
+				<img src="img/farmacia1.jpg">
+				<p>Auxiliamos você com nossos projetos de Treinamento em boas práticas de fabricação, elaboração do manual de boas práticas de fabricação, mentoria, análise de água e análise microbiológica de superfície.</p>
+			</div>
+			<div class="servico s4">
+
+				<h3>Pops</h3>
+				<img src="img/farmacia1.jpg">
+				<p>O profissional dessa área deve seguir a legislação, os princípios de farmacologia e as Boas Práticas de Dispensação para prestar um bom serviço aos pacientes. Com esse propósito, oferecemos treinamentos teóricos e práticos a atendentes de farmácias e drogarias.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contatos" id="contatos">
+		<div class="div-contatos">
+			<h2>Contatos</h2>
+			<div class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.5352779924524!2d-34.9473149854264!3d-8.046751782598006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1961324bcf9d%3A0xc61935a160e06860!2sAv.%20Prof.%20Moraes%20Rego%2C%20844%20-%20Cidade%20Universit%C3%A1ria%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1606919943818!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<p>Av. Prof. Moraes Rego, 844-900 - Cidade Universitária, Recife - PE, 50670-420</p>
+				<p>Telefone: (81) 2126-3661</p>
+				<p>Email: contato@seedabit.org.br</p>
+
+			</div>
+			<div class="formulario">
+				<form>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					<label for="email">E-mail:</label>
+					<input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+					<label for="telefone">Telefone:</label>
+					<input type="text" name="telefone" id="telefone" placeholder="(DDD)9xxxx-xxxx">
+					<label for="servico">Serviço de interesse:</label>
+					<select id="servico" class="servico">
+						<option>Consultoria</option>
+						<option>Consultório farmacêutico</option>
+						<option>Segurança alimentar</option>
+						<option>POPs</option>
+					</select>
+					<label for="descricao">Descrição:</label>
+					<textarea name="descricao" id="descricao"></textarea>
+					<button type="submit">Enviar</button>
+
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="div-footer">
+			<div class="footer-logo">
+				<img src="img/logo-level-pharm.jpeg" alt="img logo footer">
+			</div>
+			<div class="contatos">
+				<img src="#" alt="img-email">
+				<img src="#" alt="img-instagram">
+				<img src="#" alt="img-facebook">
+
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
