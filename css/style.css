@@ -1,22 +1,35 @@
 /* General resets */
-
-html {
-    box-sizing: border-box;
-    
+:root {
+    --primary-color: #193094;
+    --secondary-color: #ffffff;
+    font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
 }
+
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Goldman', cursive;
+    font-size: 1rem; /* assumindo o default do browser de 16px */
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
+    
 }
 
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block; /* tira o espaço em branco que fica no bottom da imagem */
 }
