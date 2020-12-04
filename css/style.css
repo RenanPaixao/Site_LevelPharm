@@ -3,6 +3,7 @@
 :root {
   --primary-color: #193094;
   --secondary-color: #ffffff;
+  --primary-light: #193094af;
   font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
 }
 
@@ -23,11 +24,6 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-  display: inline-block;
-}
 
 img {
   max-width: 100%;
@@ -47,9 +43,13 @@ header {
   overflow: auto; /* previne a margin collapsing do container-flex, já que no .container não tem nenhum preenchimento (padding) prevenindo que as margins-top (do .container e .container-flex) sofram colapso. */
 }
 
+
 .container-flex {
   display: flex;
   margin-top: 1em;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
   flex-wrap: wrap;
   
 }
@@ -61,3 +61,32 @@ header {
 .menu-logo {
     width: 140px;
 }
+
+.menu-nav a {
+    padding: .625em;
+    margin: 0 .3125em;
+}
+
+.menu-nav li {
+    border-right: 1px solid var(--primary-color);
+}
+
+.menu-nav li:last-of-type {
+    border-right: unset; /* tirando a borda direita do último item da lista de navegação */
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+
+/* Botoões */
+
