@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #193094;
+  --primary-dark:  #0d1e6d;
   --secondary-color: #ffffff;
   --primary-light: #193094af;
   font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
@@ -89,4 +90,20 @@ a:hover {
 
 
 /* Botoões */
+
+button {
+    padding: .625em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
 
