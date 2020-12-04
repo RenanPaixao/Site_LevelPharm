@@ -1,35 +1,63 @@
 /* General resets */
-:root {
-    --primary-color: #193094;
-    --secondary-color: #ffffff;
-    font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
-}
 
+:root {
+  --primary-color: #193094;
+  --secondary-color: #ffffff;
+  font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
+}
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Goldman', cursive;
-    font-size: 1rem; /* assumindo o default do browser de 16px */
+  font-family: "Goldman", cursive;
+  font-size: 1rem; /* assumindo o default do browser de 16px */
 }
 
 ul {
-    list-style-type: none;
-    
+  list-style-type: none;
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
 }
 
 img {
-    max-width: 100%;
-    display: block; /* tira o espaço em branco que fica no bottom da imagem */
+  max-width: 100%;
+}
+
+/* navbar */
+
+header {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 1em; /* pra não ficar colado nas laterais na versão mobile */
+  padding-right: 1rem;
+  overflow: auto; /* previne a margin collapsing do container-flex, já que no .container não tem nenhum preenchimento (padding) prevenindo que as margins-top (do .container e .container-flex) sofram colapso. */
+}
+
+.container-flex {
+  display: flex;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.menu-logo {
+    width: 140px;
 }
