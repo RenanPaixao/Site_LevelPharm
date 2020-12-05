@@ -17,6 +17,7 @@
 }
 
 body {
+  margin: 10px;
   font-family: "Goldman", cursive;
   font-size: 1rem; /* assumindo o default do browser de 16px */
 }
@@ -89,7 +90,7 @@ a:hover {
 }
 
 
-/* Botoões */
+/* Botões */
 
 button {
     padding: .625em;
@@ -106,6 +107,47 @@ button:hover {
     background-color: var(--primary-dark);
 }
 
+/*section de serviços*/
+#servico-titulo{
+  font-size: 40px;
+  margin: 5% 0 7% 0;
+  text-align: center;
+}
+
+.div-servicos{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+
+}
+
+.servico{
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+.imagem{
+  max-width: 100%;
+  width: auto;
+}
+
+.titulo-servico-individual{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.descricao-servicos{
+  font-size: 17px;
+}
+
+.s1{
+  margin-bottom: 5%;
+}
+.s2{
+  margin-bottom: 5%;
+}
 
 /* section de contato, sendo o mapa e o form*/
 
@@ -113,35 +155,31 @@ button:hover {
   margin-bottom: 5%;
   text-align: center;
 }
+
+.div-contatos > *{
+  width: 50%;
+}
+
 .div-contatos{
   display: flex;
   
-}
-.div-contatos > *{
-
-  width: 50%;
 }
 
 form input, select, textarea{
   display: block;  
   width: 100%;
 }
+
 form input, select{
   
   margin-bottom: 5%;
 }
 
-
-
 form {
   height: 100%;
-  padding-left: 10%;
-  font-size: larger;
-  
-  
+  padding-left: 5%;
+  font-size: larger;  
 }
-
-
 
 form button{
   display: block;
@@ -149,6 +187,13 @@ form button{
   margin-left: auto;
   margin-right: auto;
   
+}
+.mapa{
+  padding-left: 1%;
+}
+#endereco-mapa{
+  font-size: 14px;
+  margin-bottom: 5%;
 }
 
 
