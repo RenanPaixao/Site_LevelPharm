@@ -68,9 +68,11 @@ header {
     margin: 0 .3125em;
 }
 
+
 .menu-nav li {
     border-right: 1px solid var(--primary-color);
 }
+
 
 .menu-nav li:last-of-type {
     border-right: unset; /* tirando a borda direita do último item da lista de navegação */
@@ -221,3 +223,17 @@ form button{
 }
 
 
+/* Footer */
+
+.container-footer {
+  margin-top: 3em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+.content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
