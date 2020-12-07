@@ -5,9 +5,13 @@
   --primary-dark:  #0d1e6d;
   --secondary-color: #ffffff;
   --primary-light: #193094af;
+  --branco-gelo: #fffafa;
   font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
 }
-
+html{
+  scroll-behavior: smooth;
+  background-color: var(--branco-gelo);
+}
 *,
 *::before,
 *::after {
@@ -33,7 +37,11 @@ img {
 /* navbar */
 
 header {
-  background-color: var(--secondary-color);
+  background-color: #808080;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.98;
 }
 
 .container {
@@ -57,6 +65,8 @@ header {
 
 .menu-nav ul {
   display: flex;
+ 
+
 }
 
 .menu-logo {
@@ -66,11 +76,12 @@ header {
 .menu-nav a {
     padding: .625em;
     margin: 0 .3125em;
+    color: black;
 }
 
 
 .menu-nav li {
-    border-right: 1px solid var(--primary-color);
+    border-right: 1px solid var(--secondary-color);
 }
 
 
@@ -82,7 +93,7 @@ header {
 /* Banner */
 
 .container-banner {
-  background-image: url("/Site_LevelPharm/img/pexels-edward-jenner-4033148.jpg");
+  background-image: url("img/pexels-edward-jenner-4033148.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -102,6 +113,40 @@ header {
   font-weight: 300;
 }
 
+/* Sobre */
+.sobre{
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+   min-width: 350px;
+   overflow: auto;
+
+}
+#titulo-levelpharm{
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 5px 3px #808080;
+  margin: 10px;
+}
+.titulo-sobre{
+  text-shadow: 3px 3px 2px #1c1c1c;
+}
+.img-sobre{
+  min-width: 350px;
+  max-width: 600px;
+  float: right;
+  width: 50vw;
+  height: auto;
+  margin: 1vh 3vw;
+}
+.div-sobre{
+  margin: 1vh 3vw;
+  text-align: justify;
+  
+}
+.sobre-texto{
+  text-indent: 50px;
+    text-shadow: 0 1px #696969;
+}
 
 /* Links */
 
@@ -145,7 +190,7 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 5%;
-
+  background-color: var(--branco-gelo);
 }
 
 .servico{
@@ -176,7 +221,6 @@ button:hover {
 }
 
 /* section de contato, sendo o mapa e o form*/
-
 #contato-titulo{
   margin-bottom: 5%;
   text-align: center;
@@ -184,6 +228,7 @@ button:hover {
 
 .div-contatos > *{
   width: 50%;
+
 }
 
 .div-contatos{
@@ -194,6 +239,7 @@ button:hover {
 form input, select, textarea{
   display: block;  
   width: 100%;
+  resize: none;
 }
 
 form input, select{
@@ -224,8 +270,11 @@ form button{
 
 
 /* Footer */
+.rodape{
+  background-color: #808080;
+}
+.content-footer {
 
-.container-footer {
   margin-top: 3em;
   padding-top: 1em;
   padding-bottom: 1.5em;
@@ -236,4 +285,11 @@ form button{
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+.footer-logo{
+  float: right;
+  max-width: 500px;
+  min-width: 250px;
+  width: 15vw;
+  height: 100%;
 }
