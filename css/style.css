@@ -114,11 +114,12 @@ header {
 }
 
 /* Sobre */
-.sobre{
-   background-color: var(--primary-color);
-   color: var(--secondary-color);
-   min-width: 350px;
-   overflow: auto;
+#sobre{
+  padding-top: 12vh;
+  background-color: var(--branco-gelo);
+  color: var(--primary-color);
+  min-width: 350px;
+  overflow: auto;
 
 }
 #titulo-levelpharm{
@@ -127,9 +128,7 @@ header {
   text-shadow: 5px 3px #808080;
   margin: 10px;
 }
-.titulo-sobre{
-  text-shadow: 3px 3px 2px #1c1c1c;
-}
+
 .img-sobre{
   min-width: 350px;
   max-width: 600px;
@@ -145,7 +144,7 @@ header {
 }
 .sobre-texto{
   text-indent: 50px;
-    text-shadow: 0 1px #696969;
+  
 }
 
 /* Links */
@@ -179,6 +178,10 @@ button:hover {
 }
 
 /*section de serviços*/
+#servicos{
+  padding-top: 8vh;
+  background-color: #C0C0C0;
+}
 #servico-titulo{
   font-size: 40px;
   margin: 5% 0 7% 0;
@@ -190,7 +193,6 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 5%;
-  background-color: var(--branco-gelo);
 }
 
 .servico{
@@ -221,6 +223,10 @@ button:hover {
 }
 
 /* section de contato, sendo o mapa e o form*/
+#contatos{
+  padding-top: 15vh;
+ 
+}
 #contato-titulo{
   margin-bottom: 5%;
   text-align: center;
@@ -247,10 +253,15 @@ form input, select{
   margin-bottom: 5%;
 }
 
+.formulario-box{
+  border: solid;
+  border-color: var(--primary-color);
+}
 form {
   height: 100%;
   padding-left: 5%;
   font-size: larger;  
+
 }
 
 form button{
