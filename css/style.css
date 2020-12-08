@@ -36,6 +36,14 @@ img {
   max-width: 100%;
 }
 
+#sobre,
+#contatos,
+#servicos {
+  margin-bottom: 2em;
+  padding-top: 4em;
+}
+
+
 /* Tipografia */
 
 h2 {
@@ -142,7 +150,6 @@ header {
 
 /* Sobre */
 #sobre{
-  padding-top: 13vh;
   background-color: var(--branco-gelo);
   color: var(--primary-color);
   min-width: 350px;
@@ -203,7 +210,6 @@ button:hover {
 
 /*section de serviços*/
 #servicos{
-  padding-top: 5vh;
   background-color: #C0C0C0;
 }
 
@@ -244,10 +250,6 @@ button:hover {
 }
 
 /* section de contato, sendo o mapa e o form*/
-#contatos{
-  padding-top: 15vh;
-
-}
 
 .div-contatos > *{
   width: 50%;
@@ -298,8 +300,10 @@ form button{
 
 
 /* Footer */
+
 .rodape{
-  background-color: #808080;
+  background-color: var(--secondary-color);
+  box-shadow: 0px -2px 6px 1px rgba(0,0,0,0.34);
 }
 .content-footer {
 
@@ -320,4 +324,10 @@ form button{
   min-width: 250px;
   width: 15vw;
   height: 100%;
+}
+
+.copyright {
+  text-align: center;
+  padding: .5em;
+  background-color: var(--branco-gelo);
 }
