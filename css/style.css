@@ -41,6 +41,8 @@ img {
 h2 {
   font-size: 2.5rem;
   color: var(--primary-color);
+  text-align: center;
+  padding: 1em 0;
 }
 
 /* navbar */
@@ -147,10 +149,7 @@ header {
   overflow: auto;
 
 }
-#titulo-levelpharm{
-  text-align: center;
-  margin: 10px 0 5% 0;
-}
+
 
 .img-sobre{
   min-width: 350px;
@@ -208,10 +207,6 @@ button:hover {
   background-color: #C0C0C0;
 }
 
-#servico-titulo{
-  margin: 5% 0 5% 0;
-  text-align: center;
-}
 
 .div-servicos{
   display:flex;
@@ -252,12 +247,6 @@ button:hover {
 #contatos{
   padding-top: 15vh;
 
- 
-}
-#contato-titulo{
-  margin-bottom: 5%;
-  text-align: center;
-  font-size: 3rem;
 }
 
 .div-contatos > *{
