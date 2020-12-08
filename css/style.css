@@ -4,14 +4,16 @@
   --primary-color: #193094;
   --primary-dark:  #0d1e6d;
   --secondary-color: #ffffff;
-  --primary-light: #193094af;
-  --branco-gelo: #fffafa;
+  --primary-light: #0564B6;
+  --branco-gelo: #f2f2f2ed;
   font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
 }
-html{
+
+html {
   scroll-behavior: smooth;
   background-color: var(--branco-gelo);
 }
+
 *,
 *::before,
 *::after {
@@ -34,13 +36,36 @@ img {
   max-width: 100%;
 }
 
+#sobre,
+#contatos,
+#servicos {
+  margin-bottom: 2em;
+  padding-top: 4em;
+}
+
+
+/* Tipografia */
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 1em 0;
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
 /* navbar */
 
 header {
-  background-color: #808080;
+  background-color: var(--secondary-color);
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.34);
+  z-index: 100; /* z-index controla a ordem de empilhamento, so funciona com elementos setados com qualquer position, exceto static */
   
 }
 
@@ -63,6 +88,7 @@ header {
   
 }
 
+
 .menu-nav ul {
   display: flex;
  
@@ -70,18 +96,18 @@ header {
 }
 
 .menu-logo {
-    width: 140px;
+    max-width: 140px;
 }
 
 .menu-nav a {
     padding: .625em;
     margin: 0 .3125em;
-    color: black;
+    color: var(--primary-color);
 }
 
 
 .menu-nav li {
-    border-right: 1px solid var(--secondary-color);
+    border-right: 1.5px solid var(--primary-light);
 }
 
 
@@ -102,7 +128,20 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 100px; /* vai se afastar do menu fixo e mostrar a imagem inteira */
+  position: relative; /* pra poder posicionar alguma coisa absolutamente a ele */
   
+}
+
+.container-banner::after { /* adicionou o slant ao banner */
+  content: "";
+  background-color: var(--branco-gelo);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;
+  height: 100px;
+  transform: skewY(-3deg);
 }
 
 
@@ -115,19 +154,13 @@ header {
 
 /* Sobre */
 #sobre{
-  padding-top: 13vh;
   background-color: var(--branco-gelo);
   color: var(--primary-color);
   min-width: 350px;
   overflow: auto;
 
 }
-#titulo-levelpharm{
-  text-align: center;
-  font-size: 3rem;
-  text-shadow: 5px 3px #808080;
-  margin: 10px 0 5% 0;
-}
+
 
 .img-sobre{
   min-width: 350px;
@@ -137,6 +170,7 @@ header {
   height: auto;
   margin: 1vh 3vw;
 }
+
 .div-sobre{
   margin: 1vh 3vw;
   text-align: justify;
@@ -153,6 +187,7 @@ a {
   text-decoration: none;
   color: var(--primary-color);
   display: inline-block;
+  transition: 0.3s ease-out;
 }
 
 a:hover {
@@ -174,31 +209,32 @@ button {
 
 
 button:hover {
-    background-color: var(--primary-dark);
+    background-color: var(--primary-light);
 }
 
 /*section de serviços*/
-#servicos{
-  padding-top: 5vh;
-  background-color: #C0C0C0;
-}
-#servico-titulo{
-  font-size: 3rem;
-  margin: 5% 0 5% 0;
-  text-align: center;
+
+
+.servicos {
+  padding: 2em;
+  background-color: var(--secondary-color);
 }
 
-.div-servicos{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 5%;
+
+.div-servicos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: 1em;
 }
 
-.servico{
-  flex: 1 1 50%;
-  padding: 10px;
+.servico {
+  padding: 2em;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.23);
+  border-radius: 3px;
+  background-color: var(--secondary-color);
+  margin: 1em;
 }
+
 
 .imagem-servicos{
   max-width: 625px;
@@ -207,33 +243,13 @@ button:hover {
 }
 
 .titulo-servico-individual{
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 4%;
 }
 
-.descricao-servicos{
-  font-size: 17px;
-}
-
-.s1{
-  margin-bottom: 5%;
-}
-.s2{
-  margin-bottom: 5%;
-}
 
 /* section de contato, sendo o mapa e o form*/
-#contatos{
-  padding-top: 15vh;
-
- 
-}
-#contato-titulo{
-  margin-bottom: 5%;
-  text-align: center;
-  font-size: 3rem;
-}
 
 .div-contatos > *{
   width: 50%;
@@ -277,6 +293,7 @@ form button{
 .mapa{
   padding-left: 1%;
 }
+
 #endereco-mapa{
   font-size: 14px;
   margin-bottom: 5%;
@@ -284,14 +301,15 @@ form button{
 
 
 /* Footer */
-.rodape{
-  background-color: #808080;
-}
-.content-footer {
 
-  margin-top: 3em;
-  padding-top: 1em;
-  padding-bottom: 1.5em;
+.rodape{
+  background-color: var(--secondary-color);
+  box-shadow: 0px -2px 6px 1px rgba(0,0,0,0.34);
+}
+
+.content-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .content-footer {
@@ -300,10 +318,20 @@ form button{
   justify-content: center;
   margin: 0 auto;
 }
+
 .footer-logo{
-  float: right;
-  max-width: 500px;
-  min-width: 250px;
-  width: 15vw;
-  height: 100%;
+  max-width: 250px;
+  min-width: 140px;
+  margin-right: 1em;
+  
+}
+
+.copyright {
+  text-align: center;
+  padding: .5em;
+  background-color: var(--branco-gelo);
+}
+
+.social a {
+  margin: .5em;
 }
