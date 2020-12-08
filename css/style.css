@@ -4,14 +4,16 @@
   --primary-color: #193094;
   --primary-dark:  #0d1e6d;
   --secondary-color: #ffffff;
-  --primary-light: #193094af;
+  --primary-light: #0564B6;
   --branco-gelo: #fffafa;
   font-size: 100%; /* não seta uma font-size específica, o documento herda a font-size do browser */
 }
-html{
+
+html {
   scroll-behavior: smooth;
   background-color: var(--branco-gelo);
 }
+
 *,
 *::before,
 *::after {
@@ -37,10 +39,11 @@ img {
 /* navbar */
 
 header {
-  background-color: #808080;
+  background-color: var(--secondary-color);
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.34);
   
 }
 
@@ -70,18 +73,18 @@ header {
 }
 
 .menu-logo {
-    width: 140px;
+    max-width: 140px;
 }
 
 .menu-nav a {
     padding: .625em;
     margin: 0 .3125em;
-    color: black;
+    color: var(--primary-color);
 }
 
 
 .menu-nav li {
-    border-right: 1px solid var(--secondary-color);
+    border-right: 1.5px solid var(--primary-light);
 }
 
 
