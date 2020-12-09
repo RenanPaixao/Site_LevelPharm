@@ -274,15 +274,24 @@ button:hover {
 
 /* section de contato, sendo o mapa e o form*/
 
-.div-contatos > *{
-  width: 50%;
-
-}
-
-.div-contatos{
+.div-contatos {
+  max-width: 1000px;
   display: flex;
-  
 }
+
+iframe {
+  max-width: 100%;
+}
+
+.mapa {
+  flex: 1 1 auto;
+}
+
+
+.formulario {
+  flex: 1 1 auto;
+}
+
 
 form input, select, textarea{
   display: block;  
@@ -290,20 +299,10 @@ form input, select, textarea{
   resize: none;
 }
 
-form input, select{
-  
-  margin-bottom: 5%;
-}
 
 .formulario-box{
   border: solid;
   border-color: var(--primary-color);
-}
-form {
-  height: 100%;
-  padding-left: 5%;
-  font-size: larger;  
-
 }
 
 form button{

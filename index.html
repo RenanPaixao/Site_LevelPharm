@@ -183,9 +183,11 @@
             <p><a href="mailto:contato@seedabit.org.br"">contato@seedabit.org.br</a></p>
           </div>
         </div>
+
         <div class="formulario">
           <form>
-            <label for="nome" class="label-form-contato">Nome:</label>
+            <div>
+              <label for="nome" class="label-form-contato">Nome:</label>
             <input
               type="text"
               name="nome"
@@ -193,7 +195,10 @@
               id="nome"
               placeholder="Digite seu nome"
             />
-            <label for="email">E-mail:</label>
+            </div>
+            
+            <div>
+              <label for="email">E-mail:</label>
             <input
               type="text"
               name="email"
@@ -201,7 +206,10 @@
               id="email"
               placeholder="Digite seu e-mail"
             />
-            <label for="telefone">Telefone:</label>
+            </div>
+            
+            <div>
+              <label for="telefone">Telefone:</label>
             <input
               type="number"
               class="formulario-box"
@@ -209,19 +217,27 @@
               id="telefone"
               placeholder="(DDD)9xxxx-xxxx"
             />
-            <label for="servico">Serviço de interesse:</label>
+            </div>
+            
+            <div>
+              <label for="servico">Serviço de interesse:</label>
             <select class="formulario-box" id="servico" class="servico">
               <option>Consultoria</option>
               <option>Consultório farmacêutico</option>
               <option>Segurança alimentar</option>
               <option>POPs</option>
             </select>
-            <label for="descricao">Descrição:</label>
+            </div>
+            
+            <div>
+              <label for="descricao">Descrição:</label>
             <textarea
               name="descricao"
               class="formulario-box"
               id="descricao"
             ></textarea>
+            </div>
+            
             <button id="button-enviar" type="submit">Enviar</button>
           </form>
         </div>
