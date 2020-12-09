@@ -93,7 +93,6 @@ header {
   align-items: center;
   justify-content: space-between;
   align-content: center;
-  flex-wrap: wrap;
   
 }
 
@@ -117,6 +116,7 @@ header {
 
 .menu-nav li {
     border-right: 1.5px solid var(--primary-light);
+    text-align: center;
 }
 
 
@@ -274,9 +274,18 @@ button:hover {
 
 /* section de contato, sendo o mapa e o form*/
 
+#contatos {
+  margin-bottom: 5em;
+}
+
+
 .div-contatos {
   display: flex;
   max-width: 1000px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0px -2px 6px 1px rgba(0,0,0,0.34);
 }
 
 
@@ -354,7 +363,6 @@ form button{
 
 .footer-logo{
   max-width: 250px;
-  min-width: 140px;
   margin-right: 1em;
   
 }
@@ -367,4 +375,73 @@ form button{
 
 .social a {
   margin: .5em;
+}
+
+
+/* Media Queries */
+@media (max-width: 645px) {
+
+  .container-flex {
+    flex-direction: column;
+  }
+
+  .menu-nav li {
+    margin-bottom: .5em;
+  }
+
+  .content-footer {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    max-width: 145px;
+  }
+}
+
+@media (max-width: 760px) {
+  .div-servicos {
+    grid-template-columns: 1fr;
+  }
+
+  .div-contatos {
+    flex-direction: column;
+  }
+
+  .mapa {
+    margin-right: 0;
+  }
+
+  .formulario {
+    max-width: 100%;
+  }
+
+  .flex-sobre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-sobre {
+    float: unset;
+    max-width: 100%;
+    min-width: unset;
+    width: auto;
+    margin: 1vh 3vw;
+  }
+
+  .missao,
+  .visão {
+    max-width: unset;
+  }
+
+  .servico {
+    margin: 1em 0;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .servicos {
+    padding: .5em;
+  }
 }
